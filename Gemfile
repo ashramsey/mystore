@@ -47,3 +47,10 @@ gem 'debugger', group: [:development, :test]
 gem 'spree', '2.1.5'
 gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-1-stable'
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-1-stable'
+
+group :production
+  # for debian
+  gem 'execjs'
+  gem 'therubyracer'
+  gem 'pg'
+end
