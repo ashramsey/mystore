@@ -137,6 +137,7 @@ GEM
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
     kgio (2.9.2)
+    libv8 (3.16.14.3)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -164,6 +165,7 @@ GEM
       mime-types
     paranoia (2.0.2)
       activerecord (~> 4.0)
+    pg (0.17.1)
     polyamorous (0.6.4)
       activerecord (>= 3.0)
     polyglot (0.3.4)
@@ -193,6 +195,7 @@ GEM
       polyamorous (~> 0.6.0)
     rdoc (4.1.1)
       json (~> 1.4)
+    ref (1.0.5)
     sass (3.2.14)
     sass-rails (4.0.1)
       railties (>= 4.0.0, < 5.0)
@@ -276,6 +279,9 @@ GEM
     stringex (1.5.1)
     term-ansicolor (1.3.0)
       tins (~> 1.0)
+    therubyracer (0.12.1)
+      libv8 (~> 3.16.14.0)
+      ref
     thor (0.18.1)
     thread_safe (0.1.3)
       atomic
@@ -314,8 +320,10 @@ DEPENDENCIES
   capistrano
   coffee-rails (~> 4.0.0)
   debugger
+  execjs
   jbuilder (~> 1.2)
   jquery-rails
+  pg
   rails (= 4.0.2)
   sass-rails (~> 4.0.0)
   sdoc
@@ -323,6 +331,7 @@ DEPENDENCIES
   spree_auth_devise!
   spree_gateway!
   sqlite3
+  therubyracer
   turbolinks
   uglifier (>= 1.3.0)
   unicorn
