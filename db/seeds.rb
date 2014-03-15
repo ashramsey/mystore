@@ -10,10 +10,6 @@ Spree::Core::Engine.load_seed if defined?(Spree::Core) if Spree::Zone.count == 0
 # Spree::Auth::Engine.load_seed if defined?(Spree::Auth)
 
 if Spree::User.admin.empty?
-  create_admin_user
-end
-
-def create_admin_user
   password = 'abc123'
   email = 'ashramsey@gmail.com'
 
